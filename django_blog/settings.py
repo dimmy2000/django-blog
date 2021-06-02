@@ -19,7 +19,7 @@ env = environ.Env(
     DEBUG=(bool, False),
 )
 # reading .env file
-env_file_path = str(PurePath(__file__).parents[2].joinpath('.env'))
+env_file_path = str(PurePath(__file__).parents[1].joinpath('.env'))
 environ.Env.read_env(env_file=str(env_file_path))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
