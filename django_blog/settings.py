@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import os
 from pathlib import Path
 from pathlib import PurePath
 
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     "blog.apps.BlogConfig",
     "users.apps.UsersConfig",
     "crispy_forms",
+    "django_gravatar",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -137,6 +139,9 @@ STATIC_URL = "/static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"
 
 LOGIN_REDIRECT_URL = "blog-home"
 LOGIN_URL = "login"

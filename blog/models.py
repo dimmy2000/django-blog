@@ -4,7 +4,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    """Example of Post in blog."""
+    """Database model of user's post in blog."""
 
     title = models.CharField(max_length=100)
     content = models.TextField()
