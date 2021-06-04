@@ -1,8 +1,8 @@
 from django.apps import AppConfig
 
 
-class BlogConfig(AppConfig):
-    """Configuration for blog app."""
+class UsersConfig(AppConfig):
+    """Configuration for users app."""
 
     default_auto_field = "django.db.models.BigAutoField"
-    name = "blog"
+    name = "users"
