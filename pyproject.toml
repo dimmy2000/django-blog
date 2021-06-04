@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "django-blog"
-version = "0.1.0"
+version = "0.1.1"
 description = "pet-project to learn django"
 authors = ["dimmy2000"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 Django = "^3.2.3"
 django-environ = "^0.4.5"
 django-crispy-forms = "^1.11.2"
