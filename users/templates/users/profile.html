@@ -1,14 +1,9 @@
 {% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
-{% load gravatar %}
 {% block content %}
 <div class="content-section">
     <div class="media">
-        {% if user.profile.image %}
         <img class="rounded-circle account-img" alt="user-avatar" src="{{ user.profile.image.url }}">
-        {% else %}
-        <img class="rounded-circle account-img" alt="user-avatar" src="{% gravatar_url user.email 150 %}">
-        {% endif %}
         <div class="media-body">
             <h1 class="account-heading">{{ user.username }}</h1>
             <p class="text-secondary">{{ user.email }}</p>

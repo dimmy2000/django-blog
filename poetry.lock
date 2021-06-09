@@ -86,14 +86,6 @@ optional = false
 python-versions = "*"
 
 [[package]]
-name = "django-gravatar2"
-version = "1.4.4"
-description = "Essential Gravatar support for Django. Features helper methods, templatetags and a full test suite!"
-category = "main"
-optional = false
-python-versions = "*"
-
-[[package]]
 name = "dotenv-linter"
 version = "0.2.0"
 description = "Linting dotenv files like a charm!"
@@ -235,7 +227,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "3abe3d2c1f0c9059a6e38459c327a326a7c6f5740f8428a831e2f6850875d20f"
+content-hash = "5ac07f1d2438a48ea09ab0303e5bb84e0abc063ff18a565049f6a5b600dde3f8"
 
 [metadata.files]
 appdirs = [
@@ -272,10 +264,6 @@ django-crispy-forms = [
 django-environ = [
     {file = "django-environ-0.4.5.tar.gz", hash = "sha256:6c9d87660142608f63ec7d5ce5564c49b603ea8ff25da595fd6098f6dc82afde"},
     {file = "django_environ-0.4.5-py2.py3-none-any.whl", hash = "sha256:c57b3c11ec1f319d9474e3e5a79134f40174b17c7cc024bbb2fad84646b120c4"},
-]
-django-gravatar2 = [
-    {file = "django-gravatar2-1.4.4.tar.gz", hash = "sha256:c813280967511ced93eea0359f60e5369c35b3311efe565c3e5d4ab35c10c9ee"},
-    {file = "django_gravatar2-1.4.4-py2.py3-none-any.whl", hash = "sha256:545a6c2c5c624c7635dec29c7bc0be1a2cb89c9b8821af8616ae9838827cc35b"},
 ]
 dotenv-linter = [
     {file = "dotenv-linter-0.2.0.tar.gz", hash = "sha256:c99b981966450e48007b92547ed8e16355ec88f1dac5494a4576440546467cf7"},

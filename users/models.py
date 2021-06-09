@@ -7,7 +7,7 @@ class Profile(models.Model):
     """Database model of user profile in blog."""
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to="profile_pics")
+    image = models.ImageField(default="profile_pics/default.jpg", upload_to="profile_pics")
 
     class Meta:
         """Inner class for adding metadata to model."""
@@ -19,9 +19,9 @@ class Profile(models.Model):
         """Class instance representation."""
         return f"{self.user.username} Profile"
 
-    def save(self):
+    def save(self, *args, **kwargs):
         """Redefinition of parent's class save method."""
-        super().save()
+        super().save(*args, **kwargs)
 
         img = Image.open(self.image.path)
 
