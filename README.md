@@ -19,6 +19,8 @@ Create `.env` file and fill the following variables with your own values:
 ```dotenv
 SECRET_KEY=your-own-top-secret-phrase-thank-you-very-much
 DEBUG=true
+EMAIL_HOST_USER=your-gmail-box-login
+EMAIL_HOST_PASSWORD=your-gmail-box-password
 ```
 ### Launch
 
